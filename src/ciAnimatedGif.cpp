@@ -111,7 +111,7 @@ void ciAnimatedGif::update()
     mCurTex = mFrameList[mCurFrame];
 }
 
-void ciAnimatedGif::draw(Location loc)
+void ciAnimatedGif::draw(log::Location loc)
 {
     update();
 
