@@ -111,10 +111,10 @@ void ciAnimatedGif::update()
     mCurTex = mFrameList[mCurFrame];
 }
 
-void ciAnimatedGif::draw(ivec2)
+void ciAnimatedGif::draw(Location loc)
 {
     update();
 
-    gl::draw(mCurTex, Location(ivec2));
+    gl::draw(mCurTex, loc);
     
 }

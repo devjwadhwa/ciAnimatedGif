@@ -3,6 +3,9 @@
 #include "cinder/app/App.h"
 #include "cinder/gl/gl.h"
 #include "cinder/Log.h"
+#include "location.h"
+
+using mylibrary::Location;
 
 namespace cinder {
 
@@ -17,7 +20,7 @@ class ciAnimatedGif {
     static ciAnimatedGifRef create( const cinder::fs::path &path){ return ciAnimatedGif::create( (cinder::DataSourceRef)cinder::DataSourcePath::create( path )); }
     
     void update();
-    void draw(ivec2);
+    void draw(Location loc);
     void play();
     void seek( float pct );
     
