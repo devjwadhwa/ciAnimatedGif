@@ -111,7 +111,7 @@ void ciAnimatedGif::update()
     mCurTex = mFrameList[mCurFrame];
 }
 
-void ciAnimatedGif::draw()
+void ciAnimatedGif::draw(ivec2)
 {
     update();
 

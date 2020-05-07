@@ -16,7 +16,7 @@ class ciAnimatedGif {
     static ciAnimatedGifRef create( const cinder::fs::path &path){ return ciAnimatedGif::create( (cinder::DataSourceRef)cinder::DataSourcePath::create( path )); }
     
     void update();
-    void draw();
+    void draw(ivec2);
     void play();
     void seek( float pct );
     

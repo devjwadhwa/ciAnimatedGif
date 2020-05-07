@@ -50,7 +50,7 @@ void BasicSampleApp::update()
 {
 }
 
-void BasicSampleApp::draw()
+void BasicSampleApp::draw(ivec2)
 {
 	gl::clear( Color( 0, 0, 0 ) );
     
