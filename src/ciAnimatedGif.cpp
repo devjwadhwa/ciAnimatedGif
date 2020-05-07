@@ -115,6 +115,6 @@ void ciAnimatedGif::draw(ivec2)
 {
     update();
 
-    gl::draw(mCurTex, Location());
+    gl::draw(mCurTex, Location(ivec2));
     
 }
